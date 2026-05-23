@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гайд з ПК — PC-Essentials</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/my_css/footer.css">
+    <link rel="stylesheet" href="./assets/my_css/button.css">
+    <link rel="stylesheet" href="./assets/my_css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/result_png-clipart-logo-computer-monitors-computer-logo-computer-monitors-removebg-preview.png">
+</head>
+<body class="d-flex flex-column min-vh-100" style="padding-top: 80px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/images/result_png-clipart-logo-computer-monitors-computer-logo-computer-monitors-removebg-preview.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                PC-Essentials
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="soft.html">Топ софту</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="guide.html">Гайд з ПК</a></li>
+                    <li class="nav-item"><a class="nav-link" href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <h2 class="text-center fw-bold mb-5 text-primary">Гайд з налаштування ПК</h2>
+        
+        <div class="accordion shadow-sm" id="pcGuideAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                        🛡️ Кібергігієна (Безпека)
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#pcGuideAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Вбудований захист — найкращий.</strong> Якщо ви використовуєте Windows 10 або 11, стандартного <strong>Windows Defender</strong> цілком достатньо. Він не перевантажує процесор, як сторонній софт.</p>
+                        <hr>
+                        <p><strong>Двофакторна автентифікація (2FA).</strong> Увімкніть підтвердження через смартфон на всіх важливих акаунтах: пошта, соцмережі, банкінг.</p>
+                        <hr>
+                        <p><strong>Перевірка підозрілих файлів.</strong> Якщо ви завантажили програму з невідомого джерела, перед запуском перевірьте її на сайті <a href="https://www.virustotal.com/gui/home/upload" target="_blank" rel="noopener" class="text-info">VirusTotal</a>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                        ⚡ Прискорення системи (Оптимізація)
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#pcGuideAccordion">
+                    <div class="accordion-body">
+                        <strong>1. Чистка автозавантаження:</strong>
+                        <ul>
+                            <li>Натисніть <kbd>Ctrl + Shift + Esc</kbd> (Диспетчер завдань).</li>
+                            <li>Вимкніть програми, які вам не потрібні одразу після увімкнення ПК.</li>
+                        </ul>
+                        <strong>2. Очищення від «цифрового пилу»:</strong>
+                        <ul>
+                            <li>Натисніть комбінацію <kbd>Win + R</kbd>, введіть <code>cleanmgr</code> і натисніть Enter.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                        🛠️ Діагностика та стрес-тести (Перевірка заліза)
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#pcGuideAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Перевірка відеокарти:</strong> Використовуйте програму <strong>FurMark</strong> («волосатий бублик»). Достатньо 15-20 хвилин тесту. Головне — стежити, щоб температура не перевищувала 80-85°C і на екрані не з'являлися артефакти (кольорові смуги чи квадрати).</p>
+                        <hr>
+                        <p><strong>Перевірка накопичувачів (SSD/HDD):</strong> Утиліта <strong>CrystalDiskInfo</strong> покаже загальний стан здоров'я диска у відсотках та час його напрацювання. Якщо статус «Тривога» — диск час міняти.</p>
+                        <hr>
+                        <p><strong>Тест оперативної пам'яті:</strong> Якщо ПК часто вилітає в «синій екран» (BSOD), скористайтеся вбудованою утилітою Windows. Натисніть <kbd>Win + R</kbd>, введіть <code>mdsched.exe</code> і виберіть перезавантаження.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        🌐 Мережа та чистий інтернет (Без реклами)
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#pcGuideAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Блокування реклами:</strong> Замість важких антивірусних розширень встановіть у браузер <strong>uBlock Origin</strong>. Він повністю вирізає рекламу на YouTube, банери та спам, не навантажуючи оперативну пам'ять.</p>
+                        <hr>
+                        <p><strong>Прискорення завантаження сторінок:</strong> Змініть DNS-сервери у налаштуваннях мережі на швидкі й безпечні від Cloudflare (<code>1.1.1.1</code> та <code>1.0.0.1</code>) або Google (<code>8.8.8.8</code>). Це знизить пінг і підвищить стабільність з'єднання.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                        🌡️ Термоконтроль та чистка від пилу
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#pcGuideAccordion">
+                    <div class="accordion-body">
+                        <p><strong>Моніторинг температур:</strong> Встановіть легку утиліту <strong>HWMonitor</strong> або <strong>AIDA64</strong>. У режимі простою температура процесора та відеокарти має бути в межах 35-45°C, під навантаженням в іграх — до 75-80°C.</p>
+                        <hr>
+                        <p><strong>Фізична чистка:</strong> Продувайте системний блок від пилу хоча б раз на пів року за допомогою балона зі стисненим повітрям. <em>Важливо:</em> під час продування фіксуйте кулери пальцем, щоб вони не оберталися від потоку повітря і не працювали як генератори струму, що може пошкодити материнську плату.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Про сайт</h4>
+                    <p>Ми забезпечуємо захист та оптимізацію для вашого комп'ютера.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="soft.html">Топ софту</a></li>
+                        <li><a href="guide.html">Гайд з ПК</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ми в мережах</h4>
+                    <div class="social-links">
+                        <button class="social"><a href="https://www.instagram.com/_m_a_r_k_u_s_ccco/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></button>
+                        <button class="social"><a href="https://www.tiktok.com/@markuss406" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a></button>
+                        <button class="social"><a href="https://github.com/dashboard" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© <span id="current-year"></span> Всі права захищені | PC-Essentials</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

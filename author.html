@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про автора — PC-Essentials</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/my_css/button.css">
+    <link rel="stylesheet" href="./assets/my_css/footer.css">
+    <link rel="stylesheet" href="./assets/my_css/style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/images/result_png-clipart-logo-computer-monitors-computer-logo-computer-monitors-removebg-preview.png">
+</head>
+<body class="d-flex flex-column min-vh-100" style="padding-top: 80px;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="./assets/images/result_png-clipart-logo-computer-monitors-computer-logo-computer-monitors-removebg-preview.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                PC-Essentials
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Головна</a></li>
+                    <li class="nav-item"><a class="nav-link" href="soft.html">Топ софту</a></li>
+                    <li class="nav-item"><a class="nav-link" href="guide.html">Гайд з ПК</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="author.html">Про автора</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="text-center p-5" style="max-width: 550px; background: rgba(30, 33, 40, 0.75); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 16px; backdrop-filter: blur(10px); box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+            <div class="mb-4">
+                <i class="fas fa-user-circle fa-6x" style="color: #cbd5e1;"></i>
+            </div>
+            <h2 class="fw-bold mb-3 text-white">Вітаю, я автор проєкту!</h2>
+            <p class="fs-5 mb-4" style="color: #9ca3af;">Я створюю корисні гайди та збираю найкращі безкоштовні інструменти для оптимізації, щоб ваш досвід роботи за комп'ютером був комфортним та продуктивним.</p>
+            
+            <h5 class="fw-bold mb-3 text-white">Зв'язатися зі мною:</h5>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="https://www.instagram.com/_m_a_r_k_u_s_ccco/" target="_blank" rel="noopener" class="btn btn-outline-info btn-lg px-4">
+                    <i class="fab fa-instagram me-2"></i>Instagram
+                </a>
+                <a href="https://www.tiktok.com/@markuss406" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg px-4">
+                    <i class="fab fa-tiktok me-2"></i>TikTok
+                </a>
+                <a href="https://t.me/F_Giunta" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg px-4">
+                    <i class="fa-brands fa-telegram"></i>Telegram
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Про сайт</h4>
+                    <p>Ми забезпечуємо захист та оптимізацію для вашого комп'ютера.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="soft.html">Топ софту</a></li>
+                        <li><a href="guide.html">Гайд з ПК</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ми в мережах</h4>
+                    <div class="social-links">
+                        <button class="social"><a href="https://www.instagram.com/_m_a_r_k_u_s_ccco/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a></button>
+                        <button class="social"><a href="https://www.tiktok.com/@markuss406" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a></button>
+                        <button class="social"><a href="https://github.com/dashboard" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">© <span id="current-year"></span> Всі права захищені | PC-Essentials</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+.services {
+    padding: 40px 15px;
+    max-width: 1170px;
+    margin: auto;
+    text-align: center;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #ffffff;
+    border-left: 4px solid #00a2ff;
+    padding-left: 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Виправлена та покращена картка софту */
+.service-card {
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    color: #e5e7eb;
+    text-align: left;
+    
+    /* Правильний Flexbox */
+    display: flex;
+    flex-direction: column; /* ПОМИЛКУ ВИПРАВЛЕНО */
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Ефект підсвічування при наведенні */
+.service-card:hover {
+    transform: translateY(-8px);
+    background: rgba(0, 162, 255, 0.04);
+    border-color: rgba(0, 162, 255, 0.4);
+    box-shadow: 0 15px 30px rgba(0, 162, 255, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.service-card h3 img {
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    line-height: 1.6;
+    flex-grow: 1; /* Рівномірно притискає кнопки до низу */
+}
